@@ -9,6 +9,14 @@
 .items img {
     width: 200px;
     height: 200px;
-    border-radius: 40px;
+    border-radius: 100px;
     object-fit: cover;
+}
+
+footer img {
+    width: 150px;
+}
+
+.step1 {
+    width: 60vw !important;
 }

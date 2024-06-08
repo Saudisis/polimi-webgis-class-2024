@@ -1,147 +1,670 @@
 <!DOCTYPE HTML>
-<!--
-	Twenty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
-			<!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="../index.html">My GISWeb - Page 2</a></h1>
-					<nav id="nav"> 
-						<ul>
-							<li class="current"><a href="../index.html">HOME</a></li>
-							<li class="current"><a href="page2.html">Page 2</a></li>
-							<li class="current"><a href="webgis.html">WebGIS</a></li>
-						</ul>
-					</nav>
-				</header>
-
+<head>
+    <title>GIS Methods</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/custom-styles.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 </head>
 
-<body class="left-sidebar is-preload">
-    <div id="page-wrapper">
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
 
         <!-- Header -->
-        <header id="header">
-            <h1 id="logo"><a href="../index.html">GRUPO 03 - Page 2</a></h1>
+        <header id="header" class="alt">
+            <a href="../index.html"><img src="../images/logo.png" alt="logo-gis03"></img>
+            </a>
             <nav id="nav">
                 <ul>
-                    <li class="current"><a href="../index.html">HOME</a></li>
-                    <li class="current"><a href="page2.html">Page 2</a></li>
-                    <li class="current"><a href="webgis.html">WebGIS</a></li>
+                    <li class="current"><a href="../index.html">Home</a></li>
+                    <li class="current"><a href="../pages/results.html">Results</a></li>
+                    <li class="current"><a href="../pages/webgis.html">WebGIS</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- Main -->
-        <article id="main">
+        <section class="wrapper style1 align-center">
+            <div class="inner">
+                <h2>Methodology</h2>
+                <p>
+                    Our methodology integrates multiple data sources and analytical techniques to assess landslide susceptibility comprehensively.</p>
+                <div class="index align-left">
 
-            <header class="special container">
-                <span class="icon solid fa-globe"></span>
-                <h2>In this second page <strong>you can put additional information!</strong></h2>
-                <p>Feel free to modify the layout and add information as you want. <br>Bootstrap is already included in this template!</p>
-            </header>
-
-            <!-- One -->
-            <div class="wrapper style4 container">
-
-                <!-- Content -->
-                <div class="content">
-                    <div>
-                        <a href="#" class="image featured"><img src="../images/pic04.jpg" alt="" /></a>
+                    <!-- Workflow -->
+                    <section>
                         <header>
-                            <h3>Dolore Amet Consequat</h3>
+                            <h3>Workflow</h3>
                         </header>
-                        <p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at consectetur non, malesuada quis augue.
-                            Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum massa. Morbi eu faucibus massa. Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper,
-                            porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
-                        <p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis
-                            sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
-                        <p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis
-                            porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
-                    </div>
+                        <div class="content">
+                            <p>Our approach includes a comprehensive <strong>four-step process</strong>: <a href="#">data preprocessing for susceptibility mapping</a>, <a href="#">susceptibility map generation</a>, <a href="#">data preprocessing for exposure assessment</a>,
+                                and <a href="#">exposure assessment</a>. This systematic methodology ensures precise and reliable results in our geographic information system (GIS) studies.</p>
+                        </div>
+                    </section>
+
+                    <!-- Heading -->
+                    <section>
+                        <header>
+                            <h3>Data preprocessing for susceptibility mapping</h3>
+                        </header>
+                        <div class="content step1">
+
+                            <header>
+                                <h3>Starting data and preliminary analysis</h3>
+                            </header>
+                            <p>We initiated our project by collecting pertinent datasets and performing initial analyses. Starting from these foundational layers, we meticulously clipped them to focus solely on the area of interest. Ensuring coherence between
+                                the Extent and Pixel size across all layers was a critical step in our process.</p>
+
+                            <!-- Gallery -->
+
+                            <div class="style1 align-center">
+                                <!-- Gallery -->
+                                <div class="gallery style2 medium lightbox onscroll-fade-in">
+                                    <article>
+                                        <a href="../images/gallery/fulls/dtm.jpg" class="image">
+                                            <img src="../images/gallery/fulls/dtm.jpg" alt="" />
+                                            <p id="modal-text">Digital representation of the Earth's surface, capturing the elevation or height values of the terrain. It provides a detailed three-dimensional description of the topography, including mountains, valleys, ridges,
+                                                and other surface features.</p>
+                                        </a>
+                                        <div class="caption">
+                                            <h3>DTM</h3>
+                                            <p>(Digital Terrain Model)</p>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/fulls/ndvi.jpg" class="image">
+                                            <img src="../images/gallery/fulls/ndvi.jpg" alt="" />
+                                        </a>
+                                        <div class="caption">
+                                            <h3>NDVI</h3>
+                                            <p>(Normalized Difference Vegetation Index)</p>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/fulls/dusaf.jpg" class="image">
+                                            <img src="../images/gallery/fulls/dusaf.jpg" alt="" />
+                                        </a>
+                                        <div class="caption">
+                                            <h3>DUSAF</h3>
+                                            <p>(Destinazione d'Uso dei Suoli Agricoli e forestali)</p>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/fulls/rivers.jpg" class="image">
+                                            <img src="../images/gallery/fulls/rivers.jpg" alt="" />
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Rivers</h3>
+                                            <ul class="actions">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/fulls/roads.jpg" class="image">
+                                            <img src="../images/gallery/fulls/roads.jpg" alt="" />
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Roads</h3>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/fulls/faults.jpg" class="image">
+                                            <img src="../images/gallery/fulls/faults.jpg" alt="" />
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Faults</h3>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/fulls/laszones.jpg" class="image">
+                                            <img src="../images/gallery/fulls/laszones.jpg" alt="" />
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Landslide Inventory</h3>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <header>
+                                <h3>Data Processing</h3>
+                            </header>
+                            <p>Once the data was preprocessed, the processing of it started. For this, tools from QGIS such as Dzetsaka, allowed the algorithm to learn based on the parameters of hazard and probability of being a landslide area. </p>
+
+                            <div class="style1 align-center">
+                                <!-- Gallery -->
+                                <div class="gallery style2 medium lightbox onscroll-fade-in">
+                                    <article>
+                                        <a href="../images/gallery/thumbs/slope.png" class="image">
+                                            <img src="../images/gallery/thumbs/slope.png" alt="" />
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Slope</h3>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/thumbs/aspect.jpg" class="image">
+                                            <img src="../images/gallery/thumbs/aspect.jpg" alt="" />
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Aspect</h3>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/thumbs/profile.jpg" class="image">
+                                            <img src="../images/gallery/thumbs/profile.jpg" alt="" />
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Curvature</h3>
+                                            <p>(Profile)</p>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/thumbs/plan.jpg" class="image">
+                                            <img src="../images/gallery/thumbs/plan.jpg" alt="" />
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Curvature</h3>
+                                            <p>(Plan)</p>
+                                            <ul class="actions">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/fulls/population.png" class="image">
+                                            <img src="../images/gallery/fulls/population.png" alt="" />
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Population</h3>
+                                            <ul class="actions">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Unordered List -->
+                    <section>
+                        <header>
+                            <h3>Unordered List</h3>
+                        </header>
+                        <div class="content">
+
+                            <h4>Default</h4>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Interdum adipiscing gravida odio</li>
+                                <li>Porttitor sem non integer</li>
+                                <li>Non faucibus ornare mi ut ante</li>
+                                <li>Sagittis adipiscing eleifend</li>
+                                <li>Felis amet dolore viverra</li>
+                            </ul>
+
+                            <h4>Alternate</h4>
+                            <ul class="alt">
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Interdum adipiscing gravida odio</li>
+                                <li>Porttitor sem non integer</li>
+                                <li>Non faucibus ornare mi ut ante</li>
+                                <li>Sagittis adipiscing eleifend</li>
+                                <li>Felis amet dolore viverra</li>
+                            </ul>
+
+                        </div>
+                    </section>
+
+                    <!-- Ordered List -->
+                    <section>
+                        <header>
+                            <h3>Ordered List</h3>
+                        </header>
+                        <div class="content">
+
+                            <ol>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Interdum adipiscing gravida odio</li>
+                                <li>Porttitor sem non integer</li>
+                                <li>Non faucibus ornare mi ut ante</li>
+                                <li>Sagittis adipiscing eleifend</li>
+                                <li>Felis amet dolore viverra</li>
+                            </ol>
+
+                        </div>
+                    </section>
+
+                    <!-- Definition List -->
+                    <section>
+                        <header>
+                            <h3>Definition List</h3>
+                        </header>
+                        <div class="content">
+
+                            <dl>
+                                <dt>Interdum adipiscing odio</dt>
+                                <dd>
+                                    <p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis
+                                        sagittis eget tempus euismod. Ante ipsum primis vestibulum.</p>
+                                </dd>
+                                <dt>Non faucibus ornare mi ut ante</dt>
+                                <dd>
+                                    <p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis
+                                        sagittis eget tempus euismod. Ante ipsum primis vestibulum.</p>
+                                </dd>
+                                <dt>Felis amet dolore viverra</dt>
+                                <dd>
+                                    <p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis
+                                        sagittis eget tempus euismod. Ante ipsum primis vestibulum.</p>
+                                </dd>
+                            </dl>
+
+                        </div>
+                    </section>
+
+                    <!-- Blockquote -->
+                    <section>
+                        <header>
+                            <h3>Blockquote</h3>
+                        </header>
+                        <div class="content">
+
+                            <blockquote>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis
+                                eget tempus euismod. Ante ipsum primis vestibulum.</blockquote>
+
+                        </div>
+                    </section>
+
+                    <!-- Code -->
+                    <section>
+                        <header>
+                            <h3>Code</h3>
+                        </header>
+                        <div class="content">
+
+                            <pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';
+</code></pre>
+
+                        </div>
+                    </section>
+
+                    <!-- Icons -->
+                    <section>
+                        <header>
+                            <h3>Icons</h3>
+                        </header>
+                        <div class="content">
+
+                            <h4>Style #1</h4>
+                            <ul class="icons">
+                                <li><a href="#" class="icon brands style1 fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="#" class="icon brands style1 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon brands style1 fa-instagram"><span class="label">Instagram</span></a></li>
+                                <li><a href="#" class="icon brands style1 fa-github"><span class="label">Github</span></a></li>
+                                <li><a href="#" class="icon brands style1 fa-dribbble"><span class="label">Dribbble</span></a></li>
+                            </ul>
+
+                            <h4>Style #2</h4>
+                            <ul class="icons">
+                                <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                                <li><a href="#" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+                                <li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+                            </ul>
+
+                        </div>
+                    </section>
+
+                    <!-- Buttons -->
+                    <section>
+                        <header>
+                            <h3>Buttons</h3>
+                        </header>
+                        <div class="content">
+
+                            <ul class="actions">
+                                <li><a href="#" class="button primary">Primary</a></li>
+                                <li><a href="#" class="button">Default</a></li>
+                            </ul>
+                            <ul class="actions">
+                                <li><a href="#" class="button primary large">Large</a></li>
+                                <li><a href="#" class="button">Default</a></li>
+                                <li><a href="#" class="button small">Small</a></li>
+                            </ul>
+                            <ul class="actions fit">
+                                <li><a href="#" class="button primary fit">Fit</a></li>
+                                <li><a href="#" class="button fit">Fit</a></li>
+                                <li><a href="#" class="button primary fit">Fit</a></li>
+                                <li><a href="#" class="button fit">Fit</a></li>
+                            </ul>
+                            <ul class="actions fit small">
+                                <li><a href="#" class="button primary fit small">Fit + Small</a></li>
+                                <li><a href="#" class="button fit small">Fit + Small</a></li>
+                                <li><a href="#" class="button primary fit small">Fit + Small</a></li>
+                                <li><a href="#" class="button fit small">Fit + Small</a></li>
+                            </ul>
+                            <ul class="actions">
+                                <li><a href="#" class="button primary icon solid fa-search">Icon</a></li>
+                                <li><a href="#" class="button icon solid fa-download">Icon</a></li>
+                            </ul>
+                            <ul class="actions">
+                                <li><span class="button primary disabled">Primary</span></li>
+                                <li><span class="button disabled">Default</span></li>
+                            </ul>
+
+                        </div>
+                    </section>
+
+                    <!-- Actions -->
+                    <section>
+                        <header>
+                            <h3>Actions</h3>
+                        </header>
+                        <div class="content">
+
+                            <h4>Default</h4>
+                            <ul class="actions">
+                                <li><a href="#" class="button primary">Default</a></li>
+                                <li><a href="#" class="button">Default</a></li>
+                            </ul>
+
+                            <h4>Small</h4>
+                            <ul class="actions small">
+                                <li><a href="#" class="button primary small">Small</a></li>
+                                <li><a href="#" class="button small">Small</a></li>
+                            </ul>
+
+                            <h4>Stacked</h4>
+                            <ul class="actions stacked">
+                                <li><a href="#" class="button primary">Default</a></li>
+                                <li><a href="#" class="button">Default</a></li>
+                            </ul>
+
+                            <h4>Stacked + Fit</h4>
+                            <ul class="actions stacked">
+                                <li><a href="#" class="button primary fit">Default</a></li>
+                                <li><a href="#" class="button fit">Default</a></li>
+                            </ul>
+
+                        </div>
+                    </section>
+
+                    <!-- Form -->
+                    <section>
+                        <header>
+                            <h3>Form</h3>
+                        </header>
+                        <div class="content">
+
+                            <form method="post" action="#">
+                                <div class="fields">
+                                    <div class="field half">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name" value="" />
+                                    </div>
+                                    <div class="field half">
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" id="email" value="" />
+                                    </div>
+                                    <div class="field">
+                                        <label for="department">Department</label>
+                                        <select name="department" id="department">
+                                                <option value="">- Category -</option>
+                                                <option value="1">Manufacturing</option>
+                                                <option value="2">Shipping</option>
+                                                <option value="3">Administration</option>
+                                                <option value="4">Human Resources</option>
+                                            </select>
+                                    </div>
+                                    <div class="field third">
+                                        <input type="radio" id="priority-low" name="priority" checked />
+                                        <label for="priority-low">Low Priority</label>
+                                    </div>
+                                    <div class="field third">
+                                        <input type="radio" id="priority-normal" name="priority" />
+                                        <label for="priority-normal">Normal Priority</label>
+                                    </div>
+                                    <div class="field third">
+                                        <input type="radio" id="priority-high" name="priority" />
+                                        <label for="priority-high">High Priority</label>
+                                    </div>
+                                    <div class="field">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="message" rows="6"></textarea>
+                                    </div>
+                                    <div class="field half">
+                                        <input type="checkbox" id="copy" name="copy" />
+                                        <label for="copy">Email me a copy of this message</label>
+                                    </div>
+                                    <div class="field half">
+                                        <input type="checkbox" id="human" name="human" checked />
+                                        <label for="human">I am a human and not a robot</label>
+                                    </div>
+                                </div>
+                                <ul class="actions">
+                                    <li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+                                </ul>
+                            </form>
+
+                        </div>
+                    </section>
+
+                    <!-- Table -->
+                    <section>
+                        <header>
+                            <h3>Table</h3>
+                        </header>
+                        <div class="content">
+
+                            <h4>Default</h4>
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Item 1</td>
+                                            <td>Ante turpis integer aliquet porttitor.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item 2</td>
+                                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                                            <td>19.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item 3</td>
+                                            <td> Morbi faucibus arcu accumsan lorem.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item 4</td>
+                                            <td>Vitae integer tempus condimentum.</td>
+                                            <td>19.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item 5</td>
+                                            <td>Ante turpis integer aliquet porttitor.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2"></td>
+                                            <td>100.00</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
+                            <h4>Alternate</h4>
+                            <div class="table-wrapper">
+                                <table class="alt">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Item 1</td>
+                                            <td>Ante turpis integer aliquet porttitor.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item 2</td>
+                                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                                            <td>19.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item 3</td>
+                                            <td> Morbi faucibus arcu accumsan lorem.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item 4</td>
+                                            <td>Vitae integer tempus condimentum.</td>
+                                            <td>19.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Item 5</td>
+                                            <td>Ante turpis integer aliquet porttitor.</td>
+                                            <td>29.99</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="2"></td>
+                                            <td>100.00</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- Images -->
+                    <section>
+                        <header>
+                            <h3>Images</h3>
+                        </header>
+                        <div class="content">
+
+                            <h4>Fit</h4>
+                            <span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+
+                            <h4>Left</h4>
+                            <p><span class="image left"><img src="images/pic01.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit
+                                adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum
+                                ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante
+                                ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu
+                                felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
+
+                            <h4>Right</h4>
+                            <p><span class="image right"><img src="images/pic02.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit
+                                adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum
+                                ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante
+                                ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu
+                                felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
+
+                        </div>
+                    </section>
+
+                    <!-- Box -->
+                    <section>
+                        <header>
+                            <h3>Box</h3>
+                        </header>
+                        <div class="content">
+
+                            <div class="box">
+                                <p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
+                                    Magna sed etiam ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus lorem ipsum dolor
+                                    sit amet nullam.</p>
+                            </div>
+
+                        </div>
+                    </section>
+
                 </div>
 
+
             </div>
-
-            <!-- Two -->
-            <div class="wrapper style1 container special">
-                <div class="row">
-                    <div class="col-4 col-12-narrower">
-
-                        <div>
-                            <header>
-                                <h3>This is Something</h3>
-                            </header>
-                            <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-                            <footer>
-                                <ul class="buttons">
-                                    <li><a href="#" class="button small">Learn More</a></li>
-                                </ul>
-                            </footer>
-                        </div>
-
-                    </div>
-                    <div class="col-4 col-12-narrower">
-
-                        <div>
-                            <header>
-                                <h3>Also Something</h3>
-                            </header>
-                            <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-                            <footer>
-                                <ul class="buttons">
-                                    <li><a href="#" class="button small">Learn More</a></li>
-                                </ul>
-                            </footer>
-                        </div>
-
-                    </div>
-                    <div class="col-4 col-12-narrower">
-
-                        <div>
-                            <header>
-                                <h3>Probably Something</h3>
-                            </header>
-                            <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-                            <footer>
-                                <ul class="buttons">
-                                    <li><a href="#" class="button small">Learn More</a></li>
-                                </ul>
-                            </footer>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </article>
+        </section>
 
         <!-- Footer -->
-        <footer id="footer">
-
-            <ul class="copyright">
-                <li>&copy; My WebGIS</li>
-                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
-
+        <footer class="wrapper style1 align-center">
+            <div class="inner">
+                <a href="https://www.geoinformatics.polimi.it/" class="image">
+                    <img src="../images/logo_polimi.png" alt="" />
+                </a>
+                <p>&copy; GIS Project - Group 03: <a href="">2024</a>.</p>
+            </div>
         </footer>
 
     </div>
 
     <!-- Scripts -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.dropotron.min.js"></script>
-    <script src="/js/jquery.scrolly.min.js"></script>
-    <script src="/js/jquery.scrollex.min.js"></script>
-    <script src="/js/browser.min.js"></script>
-    <script src="/js/breakpoints.min.js"></script>
-    <script src="/js/util.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
 
 </body>
 

@@ -6630,7 +6630,8 @@ body.is-preload .gallery.onload-fade-in article .image img {
     display: block;
     position: relative;
     overflow: hidden;
-    width: 22.5rem;
+    width: 10.5rem;
+    height: 14.5rem;
     max-width: 75vw;
 }
 
@@ -6675,9 +6676,10 @@ body.is-preload .gallery.onload-fade-in article .image img {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    padding: 3rem;
     z-index: 1;
     font-size: 0.8rem;
+    text-align: center;
+    align-items: center;
 }
 
 .gallery.style2 article .caption a {
@@ -6689,7 +6691,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
 .gallery.style2 article .caption h4,
 .gallery.style2 article .caption h5,
 .gallery.style2 article .caption h6 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 0.25rem;
 }
 
