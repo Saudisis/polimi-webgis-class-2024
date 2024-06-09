@@ -1,37 +1,55 @@
-Story by HTML5 UP
+# GIS 2024 - Politecnico di Milano
+Repository for the Web Development part of the GIS lessons 2023 - 2024.
+
+The contents of this repository are entirely for learning purposes. All contents and code is completely open and available and based on open-source software.
+
+Students are encouraged to fork and and modify this template as much as they want.
+
+## Installing
+Clone the repository using the command 
+```sh
+git clone https://github.com/Diuke/polimi-webgis-class-2024
+```
+
+Or fork the repository for having your own copy.
+
+This application uses npm as the package manager and Vite as the web server.
+It uses Node version 16 or higher.
+
+First, install the dependencies using the command:
+```sh
+npm install
+```
+
+Run the project using the command.
+```sh
+npm run start
+```
+
+This will start a Vite server. Open the application in http://localhost:5173/
+
+Using Vite it is possible to follow the examples of OpenLayers, as well as use more advanced TypeScript and Visual Studio Code capabilities, such 
+as intellisense, fast reload, documentation, and code completion.
+
+## Building
+Run the command 
+```sh
+npm run build
+```
+
+This will re-create the folder /docs with all the necessary files for hosting the website in GitHub Pages.
+
+Modify the configuration file (vite.config.js) for different build configurations and folder structures.
+This is a dummy project and is not intended to be a one-fits-all configuration.
+
+## Credits
+The website is based on the template:
+
+Twenty by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-
-Say hello to Story, a brand new responsive one-pager for HTML5 UP! Inspired by my work
-on Carrd*, Story is built to be extremely modular and tweakable, and as such is entirely
-built on reusable, insanely customizable elements (like "spotlight" and "gallery") that
-can be endlessly duplicated and tweaked into whatever you need to tell your story --
-without, in many cases, touching *any* CSS. Check out index-demo.html for an interactive
-demo, and index.html for the actual template. Enjoy!
-
-Demo images** courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-PS: Delete index-demo.html and assets/js/demo.js when you're done messing with the demo
-as neither are needed in production :)
-
-(* = my other side project -- carrd.co)
-(** = not included)
-
-AJ
-aj@lkn.io | @ajlkn
+Adaptation to Vite and OpenLayers by Diuke
+https://github.com/Diuke
 
 
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)

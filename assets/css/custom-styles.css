@@ -20,3 +20,49 @@ footer img {
 .step1 {
     width: 60vw !important;
 }
+
+.s1-nl {
+    display: flex;
+}
+
+.s1-nl ol {
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.s1-nl p {
+    padding-left: 20px;
+}
+
+.stylenl {
+    width: 35%;
+}
+
+.gallery.stylenl article {
+    overflow: hidden;
+    position: relative;
+    width: 20vw;
+}
+
+.gallery-train>.backward,
+.gallery-train>.forward {
+    display: none;
+}
+
+.banner-methods {
+    background-image: url(../../images/grupo_03.png);
+    color: #ffffff;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-methods h1 {
+    color: #ffffff;
+}
+
+footer {
+    height: 10%;
+}

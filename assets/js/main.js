@@ -232,8 +232,9 @@
                 $gallery = $a.parents('.gallery'),
                 $modal = $gallery.children('.modal'),
                 $modalImg = $modal.find('img'),
-                $modalText = $modal.find('.modal-text'),
-                href = $a.attr('href');
+                $modalCaption = $modal.find('.modal-caption'),
+                href = $a.attr('href'),
+                text = $a.find('.modal-text').text();
 
             // Not an image? Bail.
             if (!href.match(/\.(jpg|gif|png|mp4)$/))
@@ -252,6 +253,9 @@
 
             // Set src.
             $modalImg.attr('src', href);
+
+            // Set text.
+            $modalCaption.text(text);
 
             // Set visible.
             $modal.addClass('visible');
@@ -299,6 +303,9 @@
                     // Clear src.
                     $modalImg.attr('src', '');
 
+                    // Clear text.
+                    $modal.find('.modal-caption').text('');
+
                     // Unlock.
                     $modal[0]._locked = false;
 
@@ -319,7 +326,7 @@
                 $modal.trigger('click');
 
         })
-        .prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /><p class="modal-text"></p></div></div>')
+        .prepend('<div class="modal" tabIndex="-1"><div class="inner"><img src="" /><div class="modal-caption"></div></div></div>')
         .find('img')
         .on('load', function(event) {
 
@@ -336,5 +343,7 @@
                 $modal.addClass('loaded');
 
             }, 275);
-        })
+
+        });
+
 })(jQuery);
