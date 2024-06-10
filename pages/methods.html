@@ -17,7 +17,7 @@
 
         <!-- Header -->
         <header id="header" class="alt">
-            <a href="../index.html"><img src="../images/logo_white.png" alt="logo-gis03"></img>
+            <a href="../index.html"><img src="../images/logo.png" alt="logo-gis03"></img>
             </a>
             <nav id="nav">
                 <ul>
@@ -33,6 +33,9 @@
 
             </div>
             <div class="inner">
+                <div>
+
+                </div>
                 <h1>Methodology</h1>
                 <p>
                     Our methodology integrates multiple data sources and analytical techniques to assess landslide susceptibility comprehensively.</p>
@@ -236,8 +239,8 @@
                                     <article>
                                         <a href="../images/gallery/methods/step1/population.png" class="image">
                                             <img src="../images/gallery/methods/step1/population.png" alt="" />
-                                            <p class="modal-text">The Population layer contains demographic data representing the population distribution within the area of interest. By overlaying population data with terrain analysis results, researchers and policymakers
-                                                can identify high-risk areas prone to hazards such as landslides or flooding and prioritize mitigation efforts accordingly.</p>
+                                            <p class="modal-text">Spatial raster dataset with the estimated total number of people per grid-cell. The dataset is available to download in Geotiff. The projection is Geographic Coordinate System, WGS84. The units are number of
+                                                people per pixel. Available from the Year 2000 to 2020.</p>
                                         </a>
                                         <div class="caption">
                                             <h3>Population</h3>
@@ -307,25 +310,7 @@
                             <header>
                                 <h3>Train and testing points</h3>
                             </header>
-                            <div class="s1-nl">
-                                <div class="stylenl train-test align-center">
-                                    <div class=" gallery-train gallery style2  lightbox onscroll-fade-in">
-                                        <article>
-                                            <a href="../images/gallery/methods/step1/train_test.png" class="image">
-                                                <img src="../images/gallery/methods/step1/train_test.png" alt="" />
-                                            </a>
-                                            <div class="caption">
-                                                <h3>Test and Training results</h3>
-                                                <ul class="actions fixed">
-                                                    <li><span class="button small">Details</span></li>
-                                                </ul>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </div>
-                                <p>To assess potential improvements in the overall accuracy of our classification algorithm, we expanded the dataset to include 1,500 points. This dataset was then split into 70% for training and 30% for testing, resulting
-                                    in 1,050 training points and 450 testing points. </p>
-                            </div>
+
                         </div>
                     </section>
 
@@ -345,7 +330,29 @@
                             <h3>Data preprocessing for exposure assessment</h3>
                         </header>
                         <div class="content">
-
+                            <header>
+                                <h3>Processing population dataset</h3>
+                            </header>
+                            <div class="s1-nl">
+                                <p class="rightp">Population count data sourced from the <span><a href="https://hub.worldpop.org/geodata/summary?id=6310">WorldPop research programme</a></span> served as the foundational dataset for this analysis. Specifically, the retrieval
+                                    criteria targeted the total population count for Italy in the <strong>year 2020</strong>. Upon acquisition, the dataset was found to possess a spatial resolution of 100 meters, with each pixel on the matrix representing
+                                    a quantifiable number of individuals. Subsequently, the map underwent a series of geospatial transformations, including reprojection and clipping, tailored to the study area's specifications. </p>
+                                <div class="stylenl train-test align-center">
+                                    <div class=" gallery-train gallery style2  lightbox onscroll-fade-in">
+                                        <article>
+                                            <a href="../images/gallery/methods/step3/population_g3.png" class="image">
+                                                <img src="../images/gallery/methods/step3/population_g3.png" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Population</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
@@ -355,11 +362,40 @@
                             <h3>Exposure assessment</h3>
                         </header>
                         <div class="content">
+                            <header>
+                                <h3>Calculate Susceptibility map</h3>
+                                <a href="https://hub.worldpop.org/geodata/summary?id=6310">
+                                </a>
+                            </header>
 
+                            <div class="s1-nl">
+                                <div class="stylenl train-test align-center">
+                                    <div class=" gallery-train gallery style2  lightbox onscroll-fade-in">
+                                        <article>
+                                            <a href="../images/gallery/methods/step3/rec_sus.jpg" class="image">
+                                                <img src="../images/gallery/methods/step3/rec_sus.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Susceptibility reclassified</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <p class="leftp">Using the raster calculator tool, risk indexes were generated for the study area, considering the number of inhabitants. This approach identifies the most hazardous zones in Valdisotto and evaluates the exposure of real-world
+                                    elements to the landslide susceptibility map. Population data helped discern how many individuals reside in areas with different levels of landslide risk. The final step used a zonal statistics plugin to sum the population
+                                    in relation to the landslide susceptibility raster, showing the total number of people in each of the four previously determined susceptibility classes. </p>
+                            </div>
                         </div>
                     </section>
                 </div>
+
             </div>
+            <ul class="actions stacked">
+                <li><a href="../pages/results.html" class="button big wide smooth-scroll-middle">Explore the results</a></li>
+            </ul>
         </section>
 
         <!-- Footer -->
