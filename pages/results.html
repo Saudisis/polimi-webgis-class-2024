@@ -40,17 +40,17 @@
                     <div class="box-left">
                         <div class="box">
                             <h4>Landslide susceptibility map</h4>
-                            <p>The susceptibility map shows that high-risk areas (red zones) are mainly in the central and southern regions, while low-risk areas (green zones) are predominantly near roads. This strategic placement of infrastructure in safer
-                                zones enhances accessibility, safety for evacuation routes, and emergency services, thereby improving regional resilience against landslides.</p>
+                            <p>The susceptibility map shows that high-risk areas (red zones) are <strong>in the central and southern regions </strong> , while low-risk areas (green zones) are predominantly near roads. This strategic placement of infrastructure
+                                in safer zones enhances accessibility, safety for evacuation routes, and emergency services, thereby improving regional resilience against landslides.</p>
                             <img class="img-res" src="../images/gallery/results/result_map.png" alt="">
                         </div>
 
                         <div class="box">
-                            <h4>Final Considerations</h4>
-                            <p>The analysis reveals a significant portion of the population living in low susceptibility zones, which is encouraging from a risk management perspective. However, a considerable population still resides in high-risk areas (Level
-                                4), necessitating targeted mitigation strategies.</p>
-                            <p>The Random Forest classifier's higher accuracy and balanced performance across both hazard levels make it the most reliable model for landslide susceptibility mapping in this analysis. This ensures more accurate identification
-                                of high-risk areas, thereby aiding in effective risk management and mitigation strategies. </p>
+                            <h4>Final considerations</h4>
+                            <p>The analysis <strong>reveals a portion of the population living in low susceptibility zones</strong> , which is encouraging from a risk management perspective. However, a considerable population still resides in high-risk areas
+                                (Level 4), necessitating targeted mitigation strategies.</p>
+                            <p><strong>The Random Forest </strong>classifier's higher accuracy and balanced performance across both hazard levels make it the <strong>most reliable model for landslide susceptibility mapping in this analysis </strong> . This
+                                ensures more accurate identification of high-risk areas, thereby aiding in effective risk management and mitigation strategies. </p>
                             <p>
                                 Continued monitoring and risk mitigation efforts are essential, especially for populations in higher susceptibility zones to minimize potential landslide impacts.
                             </p>
@@ -58,7 +58,7 @@
                     </div>
                     <div>
                         <div class="box">
-                            <h4>Random Forest Algorithm Errox Matrix</h4>
+                            <h4>Random Forest Algorithm errox matrix</h4>
                             <p>As detailed in the <a href="../pages/methods.html#second">methods section</a>, the best overall accuracy was obtained using the Random Forest Classifier, outperforming the SVM and K-Nearest Neighbor classifiers, as shown in
                                 the error table. Consequently, the analysis of the Landslide Susceptibility Mapping will focus on the results obtained with the <strong>Random Forest Classifier</strong>. </p>
                             <div class="table-wrapper">
@@ -88,6 +88,7 @@
                                             <td>198</td>
                                             <td>0.82</td>
                                             <td>0.88</td>
+                                            <td>0.84</td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
@@ -99,10 +100,9 @@
                             </div>
                         </div>
                         <div class="box">
-                            <h4>Percentage of population per Susceptibility class</h4>
-
+                            <h4>Population per susceptibility class</h4>
+                            <p>The table provides detailed statistics of the population within different susceptibility levels: </p>
                             <div class="table-wrapper">
-                                <p>The table provides detailed statistics of the population within different susceptibility levels: </p>
                                 <table>
                                     <thead>
                                         <tr>
@@ -162,7 +162,7 @@
                             </div>
                             <div class="s1-nl">
                                 <div class="stylenl train-test align-center">
-                                    <div class=" gallery-train gallery style2  lightbox onscroll-fade-in">
+                                    <div class=" gallery-train gallery style2  lightbox">
                                         <article>
                                             <a href="../images/gallery/results/pie-chart.png" class="image">
                                                 <img src="../images/gallery/results/pie-chart.png" alt="">
@@ -179,8 +179,8 @@
                                 <div>
                                     <p>The pie chart illustrates the percentage of the population living in areas with different susceptibility levels. The largest portion of the population (69.6%) resides in areas with low susceptibility (Level 1), while
                                         12% are in Level 2, 9.09% in Level 3, and 8.76% in Level 4. </p>
-                                    <p>Despite the high percentage in low-risk areas, approximately 30% of the population still lives in zones with some level of landslide susceptibility (Levels 2 to 4). This indicates a need for targeted risk mitigation
-                                        strategies
+                                    <p>Despite the high percentage in low-risk areas, approximately <strong>30% of the population still lives in zones with some level of landslide susceptibility</strong> (Levels 2 to 4). This indicates a need for targeted
+                                        risk mitigation strategies
                                     </p>
                                 </div>
                             </div>
@@ -188,6 +188,9 @@
                     </div>
                 </section>
             </div>
+            <ul class="actions stacked">
+                <li><a href="../pages/results.html" class="button big wide smooth-scroll-middle">Explore the layers</a></li>
+            </ul>
         </section>
 
         <!-- Footer -->

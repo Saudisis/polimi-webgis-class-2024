@@ -5864,14 +5864,14 @@ body.is-preload .gallery.onload-fade-in article .image img {
 }
 
 .gallery.onscroll-fade-in article .image img {
-    -moz-transition: opacity 0.75s ease-in-out;
-    -webkit-transition: opacity 0.75s ease-in-out;
-    -ms-transition: opacity 0.75s ease-in-out;
-    transition: opacity 0.75s ease-in-out;
-    -moz-transition-delay: 4.8s;
-    -webkit-transition-delay: 4.8s;
-    -ms-transition-delay: 4.8s;
-    transition-delay: 4.8s;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    -moz-transition-delay: 1s;
+    -webkit-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    transition-delay: 1s;
 }
 
 .gallery.onscroll-fade-in article:nth-child(1) .image img {

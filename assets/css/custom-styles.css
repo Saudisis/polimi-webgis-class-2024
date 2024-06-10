@@ -185,7 +185,7 @@ footer {
 }
 
 .inner-results .gallery.style2 article {
-    height: 14rem;
+    height: 13rem;
     width: 14rem;
 }
 
@@ -225,5 +225,4 @@ footer {
 
 .inner-results h4 {
     text-align: left;
-    font-weight: 400;
 }
