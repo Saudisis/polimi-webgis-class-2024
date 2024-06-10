@@ -179,27 +179,51 @@ footer {
     padding: 2rem 2.5rem 3rem 2.5rem;
 }
 
-.img-res {
-    width: 25vw;
+.inner-results .stylenl {
+    width: 100%;
+    margin-right: 20px;
 }
 
-.pie-img {
-    width: 260px;
-    height: 175px;
+.inner-results .gallery.style2 article {
+    height: 14rem;
+    width: 14rem;
+}
+
+.img-res {
+    width: 27vw;
 }
 
 .result-text {
     font-size: 0.8rem;
 }
 
-.s1-nl .box {
-    margin: 10px;
+.inner-results .box-left {
+    width: 50%;
 }
 
-.inner-results table {
+.inner-results .table-wrapper {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.s1-nl .box {
+    margin: 10px;
+    padding: 30px;
+}
+
+.inner-results table th,
+.inner-results table tr {
     font-size: 0.8rem;
+}
+
+.inner-results .box p,
+.inner-results .box li {
+    font-size: 0.85rem;
+    margin: 0;
+    text-align: justify;
 }
 
 .inner-results h4 {
     text-align: left;
+    font-weight: 400;
 }
