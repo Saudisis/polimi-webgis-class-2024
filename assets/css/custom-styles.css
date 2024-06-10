@@ -1,6 +1,128 @@
-#map {
+/* Header */
+
+#header {
+    img {
+        width: 110px;
+    }
+}
+
+.items img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+footer img {
+    width: 150px;
+}
+
+
+/* Methods*/
+
+.step1 {
+    width: 60vw !important;
+}
+
+.s1-nl {
+    display: flex;
+}
+
+.s1-nl ol {
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.tools th,
+.tools td {
+    font-size: 0.9rem;
+}
+
+.stylenl {
+    width: 35%;
+}
+
+.leftp {
+    padding-left: 40px;
+}
+
+.rightp {
+    padding-right: 40px;
+}
+
+.points-table div,
+.ptable {
     width: 100%;
-    height: 100%;
+}
+
+.points-table div:first-child {
+    margin-right: 15px;
+}
+
+.gallery-points {
+    width: 100%;
+}
+
+.points-table th,
+.points-table td,
+.point-c td,
+.point-c th {
+    font-size: 0.8rem;
+}
+
+.gallery.stylenl article {
+    overflow: hidden;
+    position: relative;
+    width: 20vw;
+}
+
+.gallery-train>.backward,
+.gallery-train>.forward {
+    display: none;
+}
+
+.point-c div:first-child {
+    margin-right: 20px;
+    width: 47%;
+}
+
+.secondst {
+    width: 40vw;
+}
+
+.secondst .table-wrapper {
+    margin-top: 15px;
+}
+
+.banner-methods {
+    background-image: url(../../images/grupo_03.png);
+    color: #ffffff;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-methods h1 {
+    color: #ffffff;
+}
+
+footer {
+    height: 10%;
+}
+
+.train p,
+.train div:first-child {
+    margin-right: 10px;
+}
+
+
+/*Map Styles*/
+
+#map {
+    width: 100vw;
+    height: 100vh;
 }
 
 .floating-button {
@@ -8,11 +130,6 @@
     z-index: 999;
     left: 50px;
     top: 10px;
-}
-
-.wrapper.style2 {
-    /* This is an example of how to change colors in the template */
-    background-color: #2e7947;
 }
 
 .banner-transparency {
@@ -30,7 +147,6 @@
     /*Change the background image here*/
     background-image: url('../../images/background-index.jpg') !important;
     background-size: cover !important;
-
     /* Original background, for reference
     background-attachment: scroll, scroll, scroll, fixed;
     background-color: #645862;
@@ -39,12 +155,13 @@
     background-repeat: no-repeat, no-repeat, repeat, no-repeat;
     background-size: 25em, 25em, auto, cover;
     */
-
     width: 100%;
     height: 100%;
 }
 
+
 /*Popup Styles*/
+
 .ol-popup {
     position: absolute;
     background-color: white;
@@ -89,15 +206,69 @@
     right: 8px;
 }
 
-.ol-popup-closer:after {
-}
 
 /*Add your new styles after this line*/
+
 .custom-control {
     bottom: 30px;
     position: absolute;
     right: 15px;
     background: white;
-    border: 2px solid  green;
+    border: 2px solid cadetblue;
     padding: 10px;
+}
+
+
+/*Results*/
+
+.inner-results {
+    padding: 2rem 2.5rem 3rem 2.5rem;
+}
+
+.inner-results .stylenl {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.inner-results .gallery.style2 article {
+    height: 13rem;
+    width: 14rem;
+}
+
+.img-res {
+    width: 27vw;
+}
+
+.result-text {
+    font-size: 0.8rem;
+}
+
+.inner-results .box-left {
+    width: 50%;
+}
+
+.inner-results .table-wrapper {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.s1-nl .box {
+    margin: 10px;
+    padding: 30px;
+}
+
+.inner-results table th,
+.inner-results table tr {
+    font-size: 0.8rem;
+}
+
+.inner-results .box p,
+.inner-results .box li {
+    font-size: 0.9rem;
+    margin: 0;
+    text-align: justify;
+}
+
+.inner-results h4 {
+    text-align: left;
 }

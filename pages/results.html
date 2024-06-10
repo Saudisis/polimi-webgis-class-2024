@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>GIS03 Results</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo_icon.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/custom-styles.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <a href="../index.html"><img src="../images/logo_white.png" alt="logo-gis03"></img>
+            </a>
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="../index.html">Home</a></li>
+                    <li class="current"><a href="../pages/methods.html">Methods</a></li>
+                    <li class="current"><a href="../pages/webgis.html">WebGIS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="wrapper style1 align-center">
+            <div class="banner-methods">
+            </div>
+            <div class="inner-results">
+                <h1>Results</h1>
+                <p>This section presents key findings, derived from comprehensive terrain analysis, detailed landslide inventories, and spatial assessments. Explore the visualizations and data insights to understand the patterns and risks associated with
+                    landslides in Valdisotto, Lombardy.</p>
+                <section class="s1-nl">
+                    <div class="box-left">
+                        <div class="box">
+                            <h4>Landslide susceptibility map</h4>
+                            <p>The susceptibility map shows that <strong> high-risk areas (red zones) are in the central and southern regions , while low-risk areas (green zones) are predominantly near roads.</strong> This strategic placement of infrastructure
+                                in safer zones enhances accessibility, safety for evacuation routes, and emergency services, thereby improving regional resilience against landslides.</p>
+                            <img class="img-res" src="../images/gallery/results/result_map.jpg" alt="">
+                        </div>
+
+                        <div class="box">
+                            <h4>Final considerations</h4>
+                            <p>The analysis <strong>reveals a portion of the population living in low susceptibility zones</strong> , which is encouraging from a risk management perspective. However, a considerable population still resides in high-risk areas
+                                (Level 4), necessitating targeted mitigation strategies.</p>
+                            <p><strong>The Random Forest </strong>classifier's higher accuracy and balanced performance across both hazard levels make it the <strong>most reliable model for landslide susceptibility mapping in this analysis </strong> . This
+                                ensures more accurate identification of high-risk areas, thereby aiding in effective risk management and mitigation strategies. </p>
+                            <p>
+                                Continued monitoring and risk mitigation efforts are essential, especially for populations in higher susceptibility zones.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box">
+                            <h4>Random Forest Algorithm errox matrix</h4>
+                            <p>As detailed in the <a href="../pages/methods.html#second">methods section</a>, the best overall accuracy was obtained using the Random Forest Classifier with 1500 points, outperforming the SVM and K-Nearest Neighbor classifiers,
+                                as shown in the error table. Consequently, the analysis of the <strong> Landslide Susceptibility Mapping will focus on the results obtained with the Random Forest Classifier</strong>. </p>
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Hazard</th>
+                                            <th>1</th>
+                                            <th>2</th>
+                                            <th>UA</th>
+                                            <th>PA</th>
+                                            <th>OA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>180</td>
+                                            <td>27</td>
+                                            <td>0.87</td>
+                                            <td>0.8</td>
+                                            <td>0.84</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>42</td>
+                                            <td>198</td>
+                                            <td>0.82</td>
+                                            <td>0.88</td>
+                                            <td>0.84</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <h4>Population per susceptibility class</h4>
+                            <p>The table provides detailed statistics of the population within different susceptibility levels: </p>
+                            <div class="table-wrapper">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Susceptibility</th>
+                                            <th>Area (m2)</th>
+                                            <th>Total population</th>
+                                            <th>Average population density</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Level 1</td>
+                                            <td>12,919,317.8</td>
+                                            <td>2420.76</td>
+                                            <td>1.249</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Level 2</td>
+                                            <td>5,555,906.95</td>
+                                            <td>416.26</td>
+                                            <td>0.499</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Level 3</td>
+                                            <td>13,466,237.8</td>
+                                            <td>315.88</td>
+                                            <td>1.156</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Level 4</td>
+                                            <td>58,186,953.4</td>
+                                            <td>304.30</td>
+                                            <td>0.034</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="3"></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <ol>
+
+                                    <li>
+                                        <p>At the first level, an area spanning 12,919,317.8 square meters hosts a population sum of 2420.76, resulting in an average population density of 1.25 people per square meter.</p>
+                                    </li>
+                                    <li>
+                                        <p>On the second level, a population of 416.26 resides within an area of 5,555,906.95 square meters, leading to an average population density of 0.50 people per square meter.</p>
+                                    </li>
+                                    <li>
+                                        <p>The third tier sees an area of 13,466,237.8 square meters accommodating 315.88 individuals, yielding an average population density of 0.16 people per square meter.</p>
+                                    </li>
+                                    <li>
+                                        <p>Finally, at the fourth level, a population of 304.30 is dispersed across an extensive region covering 58,186,953.4 square meters, resulting in an average density of 0.03 people per square meter.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="s1-nl">
+                                <div class="stylenl train-test align-center">
+                                    <div class=" gallery-train gallery style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/results/pie-chart.png" class="image">
+                                                <img src="../images/gallery/results/pie-chart.png" alt="">
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Percentage of population per Susceptibility class</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>The pie chart illustrates the percentage of the population living in areas with different susceptibility levels. The largest portion of the population (69.6%) resides in areas with low susceptibility (Level 1), while
+                                        12% are in Level 2, 9.09% in Level 3, and 8.76% in Level 4. </p>
+                                    <p>Despite the high percentage in low-risk areas, approximately <strong>30% of the population still lives in zones with some level of landslide susceptibility</strong> (Levels 2 to 4). This indicates a need for targeted
+                                        risk mitigation strategies
+                                    </p>
+                                </div>
+
+                            </div>
+                            <p>This analysis highlights the effectiveness of current measures in protecting the bulk of the population while also pointing out the critical areas where further actions are necessary to ensure the safety and well-being of the
+                                entire community.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <ul class="actions stacked">
+                <li><a href="../pages/webgis.html" class="button big wide smooth-scroll-middle">Explore the layers</a></li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="wrapper style1 align-center">
+            <div class="inner">
+                <a href="https://www.geoinformatics.polimi.it/" class="image">
+                    <img src="../images/logo_polimi.png" alt="" />
+                </a>
+                <p>&copy; GIS Project - Group 03: <a href="">2024</a>.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
