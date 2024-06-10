@@ -39,7 +39,7 @@
                 </div>
                 <h1>Methodology</h1>
                 <p>
-                    Our methodology integrates multiple data sources and analytical techniques to assess landslide susceptibility comprehensively.</p>
+                    The methodology integrates multiple data sources and analytical techniques to assess landslide susceptibility comprehensively.</p>
                 <div class="index align-left">
 
                     <!-- Workflow -->
@@ -50,6 +50,105 @@
                         <div class="content">
                             <p>Our approach includes a comprehensive <strong>four-step process</strong>: <a href="#first">data preprocessing for susceptibility mapping</a>, <a href="#second">susceptibility map generation</a>, <a href="#third">data preprocessing for exposure assessment</a>                                and <a href="#fourth">exposure assessment</a>. This systematic methodology ensures precise and reliable results in our geographic information system (GIS) project.</p>
                         </div>
+                    </section>
+
+                    <!-- Tools -->
+                    <section>
+                        <header>
+                            <h3>Tools</h3>
+                        </header>
+                        <div class="tools">
+
+                            <div class="table-wrapper ">
+                                <header>
+                                    <h3>GIS Tools</h3>
+                                </header>
+                                <table class="alt">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Version</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>QGIS</td>
+                                            <td>Free and open-source Geographic Information System that supports viewing, editing, and analysis of geospatial data.</td>
+                                            <td>3.30</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://grass.osgeo.org/download/">GRASS</a></td>
+                                            <td>Free and open-source GIS software suite used for geospatial data management and analysis, image processing, and spatial modeling.</td>
+                                            <td>8.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://gdal.org/download.html">GDAL</a></td>
+                                            <td>A translator library for raster and vector geospatial data formats.</td>
+                                            <td>3.7</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://sourceforge.net/projects/saga-gis/">SAGA</a></td>
+                                            <td>Free and open-source GIS software used for geospatial analysis and data processing.</td>
+                                            <td>8.5.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://plugins.qgis.org/plugins/pointsamplingtool/">Point Sampling</a></td>
+                                            <td>QGIS plugin used to sample raster values at point locations.</td>
+                                            <td>0.5.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://github.com/nkarasiak/dzetsaka">Dzetsaka</a></td>
+                                            <td>QGIS plugin for supervised classification.</td>
+                                            <td>0.99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <hr/>
+                            <div class="table-wrapper ">
+                                <header>
+                                    <h3>WebGIS Tools</h3>
+                                </header>
+                                <table class="alt">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Version</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Git</td>
+                                            <td>Free and open-source distributed version control system</td>
+                                            <td>2.41.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Github</td>
+                                            <td>Web-based platform that uses Git for version control and is used for code hosting, collaboration, and project management.</td>
+                                            <td>N/A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Openlayers</td>
+                                            <td>High-performance, feature-packed library for creating interactive maps on the web.</td>
+                                            <td>6.15.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Geoserver</td>
+                                            <td>Open-source server for sharing geospatial data.</td>
+                                            <td>2.23.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FileZilla</td>
+                                            <td>Free and open-source FTP application that supports file transfer protocol (FTP), FTP over TLS (FTPS), and SFTP.</td>
+                                            <td>3.65.0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
                     </section>
 
                     <!-- Section 1 -->
@@ -68,7 +167,6 @@
                             <!-- Gallery -->
 
                             <div class="style1 align-center">
-                                <!-- Gallery -->
                                 <div class="gallery style2 medium lightbox">
                                     <article>
                                         <a href="../images/gallery/methods/step1/dtm.jpg" class="image">
@@ -305,13 +403,178 @@
                                     </div>
                                 </div>
                             </div>
+                            <hr />
+
+                            <header>
+                                <h3>Train and testing points labels assignment</h3>
+                            </header>
+
+
+                            <p>A Hazard feature was created to differentiate No Landslide Zones from Landslide Zones: No Landslide Zones: 1 , Landslide Zones: 2</p>
+                            <div class="s1-nl train">
+                                <p>The training-testing ratio used to train the Machine Learning Model is 70/30. Therefore, 70% of LZ and NLZ polygons were randomly selected and assigned the "Training" label, while the remaining polygons were assigned the
+                                    "Testing" label. After this process, the hazard and training/testing labels were consolidated into one attribute table containing all polygons of LZ and NLZ. </p>
+                                <div class="stylenl train-test align-center">
+                                    <div class=" gallery-train gallery style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/methods/step1/tablehazard1.jpg" class="image">
+                                                <img src="../images/gallery/methods/step1/tablehazard1.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Attribute table Hazard 1</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="stylenl train-test align-center">
+                                    <div class=" gallery-train gallery style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/methods/step1/tablehazard2.jpg" class="image">
+                                                <img src="../images/gallery/methods/step1/tablehazard2.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Attribute table Hazard 2</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
 
                             <hr />
 
                             <header>
-                                <h3>Train and testing points</h3>
+                                <h3>Random sampling points generation</h3>
+                            </header>
+                            <div class="content">
+                                <div class="s1-nl">
+                                    <div class="stylenl train-test align-center">
+                                        <div class=" gallery-train gallery style2  lightbox">
+                                            <article>
+                                                <a href="../images/gallery/methods/step1/train_test.png" class="image">
+                                                    <img src="../images/gallery/methods/step1/train_test.png" alt="" />
+                                                </a>
+                                                <div class="caption">
+                                                    <h3>Training and Testing Points 1500</h3>
+                                                    <ul class="actions fixed">
+                                                        <li><span class="button small">Details</span></li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <p class="leftp">To train the Machine Learning Algorithm for predicting the susceptibility percentage for landslides, random sampling points were generated within all the mentioned polygons. These points were randomly placed, using
+                                        the mean in the Landslide Zones polygons, given the uncertainty of the exact starting points of the landslides. <br/> Two different dataset sizes were generated to compare their overall accuracy after classification,
+                                        with the 1500 points dataset being the chosen one. </p>
+                                </div>
+                                <div class="s1-nl points-table">
+                                    <div>
+                                        <header>
+                                            <h4>1000 Points Dataset</h4>
+                                            <p>700 Points for training and 300 for Testing</p>
+                                        </header>
+                                        <div class="table-wrapper">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Train test</th>
+                                                        <th>Hazard</th>
+                                                        <th>Number of points</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Training</td>
+                                                        <td>1</td>
+                                                        <td>350</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Testing</td>
+                                                        <td>1</td>
+                                                        <td>150</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Training</td>
+                                                        <td>2</td>
+                                                        <td>350</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Testing</td>
+                                                        <td>2</td>
+                                                        <td>150</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <header>
+                                            <h4>1500 Points Dataset</h4>
+                                            <p>1050 Points for training and 450 for Testing</p>
+                                        </header>
+                                        <div class="table-wrapper">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Train test</th>
+                                                        <th>Hazard</th>
+                                                        <th>Number of points</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Training</td>
+                                                        <td>1</td>
+                                                        <td>525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Testing</td>
+                                                        <td>1</td>
+                                                        <td>225</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Training</td>
+                                                        <td>2</td>
+                                                        <td>525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Testing</td>
+                                                        <td>2</td>
+                                                        <td>225</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <header>
+                                <h3>Sampling environmental factors</h3>
                             </header>
 
+                            <div class="content">
+                                <p>Using the Point Sampling Tool, environmental layers were sampled to obtain new attributes for each point in the datasets. All null cells in these tables were replaced with 9999 to ensure the correct use of the Dzetsaka
+                                    Algorithm in the next step</p>
+                                <header>
+                                    <h4>Training Points Sampled </h4>
+                                    <p>Attribute table</p>
+                                </header>
+                                <img class="ptable" src="../images/gallery/methods/step1/training_table.jpg" />
+                                <header>
+                                    <h4>Testing Points Sampled </h4>
+                                    <p>Attribute table</p>
+                                </header>
+                                <img class="ptable" src="../images/gallery/methods/step1/testing_table.jpg" />
+
+                            </div>
                         </div>
                     </section>
 
@@ -320,8 +583,311 @@
                         <header>
                             <h3>Susceptibility map generation</h3>
                         </header>
-                        <div class="content">
+                        <div class="content secondst">
+                            <header>
+                                <h3>Virtual multilayer generation</h3>
+                            </header>
+                            <div class="s1-nl">
+                                <div class="stylenl train-test align-center">
+                                    <div class=" gallery-train gallery style2  lightbox onscroll-fade-in">
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/multilayer.jpg" class="image">
+                                                <img src="../images/gallery/methods/step2/multilayer.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Virtual Multilayer Raster</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <p class="leftp">All environmental factors were meticulously combined into a single raster layer using the Build Virtual Raster tool in QGIS. This process involved integrating various datasets such as terrain elevation, vegetation indices,
+                                    land use, roads, rivers, and fault lines to create a unified representation. This comprehensive raster layer was then prepared for input into the Dzetsaka classification tool, enabling a more sophisticated analysis
+                                    and accurate classification of landslide susceptibility in the Valdisotto region.</p>
+                            </div>
+                            <hr/>
+                            <header>
+                                <h3>Susceptibility map generation</h3>
+                            </header>
+                            <p>Random Forest was the first classifier selected for this analysis. Random Forest builds multiple decision trees using random subsets of the training data. Each tree votes on the susceptibility percentage for each point, and
+                                the final classification is based on the majority vote.The following Susceptibility Maps and Confidence Maps were obtained with the two different Data Sets:</p>
+                            <div class="s1-nl point-c">
+                                <div class="content">
+                                    <header>
+                                        <h4>Random Forest</h4>
+                                        <p>1500 Points DataSet</p>
+                                    </header>
+                                    <div class="gallery style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/suceptibility1500.jpg" class="image">
+                                                <img src="../images/gallery/methods/step2/suceptibility1500.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Susceptibility map 1500 points</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/confidence1500.jpg" class="image">
+                                                <img src="../images/gallery/methods/step2/confidence1500.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Confidence map 1500 points</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/rivers-confidence1500.jpg" class="image">
+                                                <img src="../images/gallery/methods/step2/rivers-confidence1500.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Rivers and confidence map</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Hazard</th>
+                                                    <th>1</th>
+                                                    <th>2</th>
+                                                    <th>UA</th>
+                                                    <th>PA</th>
+                                                    <th>OA</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>180</td>
+                                                    <td>27</td>
+                                                    <td>0.87</td>
+                                                    <td>0.8</td>
+                                                    <td>0.84</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>42</td>
+                                                    <td>198</td>
+                                                    <td>0.82</td>
+                                                    <td>0.88</td>
+                                                    <td>0.84</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <header>
+                                        <h4>Random Forest</h4>
+                                        <p>1000 Points DataSet</p>
+                                    </header>
+                                    <div class="gallery gallery-train style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/suceptibility1000.jpg" class="image">
+                                                <img src="../images/gallery/methods/step2/suceptibility1000.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Susceptibility Map 1000 points</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/confidence1000.jpg" class="image">
+                                                <img src="../images/gallery/methods/step2/confidence1000.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Confidence Map 1000 points</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Hazard</th>
+                                                    <th>1</th>
+                                                    <th>2</th>
+                                                    <th>UA</th>
+                                                    <th>PA</th>
+                                                    <th>OA</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>116</td>
+                                                    <td>34</td>
+                                                    <td>0.77</td>
+                                                    <td>0.77</td>
+                                                    <td>0.76</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>26</td>
+                                                    <td>114</td>
+                                                    <td>0.81</td>
+                                                    <td>0.76</td>
+                                                    <td>0.76</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>After obtaining higher overall accuracy with the Random Forest classifier and the larger dataset, a comparison with two other classifiers was made using the same dataset of 1500 points. </p>
+                            <hr/>
+                            <header>
+                                <h3>Comparison with other classifiers</h3>
+                            </header>
+                            <p>Using this dataset, we tested two additional classification methods to evaluate their overall accuracy and determine the best susceptibility map</p>
+                            <div class="s1-nl point-c">
+                                <div class="content">
+                                    <header>
+                                        <h4>K-Nearest Neighbor (KNN)</h4>
+                                        <p>1st alternative</p>
+                                    </header>
+                                    <p>For each point in the raster, the KNN algorithm considers the susceptibility levels of the nearest points in the training dataset. It assigns the most common susceptibility level among these neighbors. </p>
+                                    <div class="gallery gallery-train style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/suceptibilityknn.jpg" class="image">
+                                                <img src="../images/gallery/methods/step2/suceptibilityknn.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Susceptibility Map KNN</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/confidenceknn.jpg" class="image">
+                                                <img src="../images/gallery/methods/step2/confidenceknn.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Confidence Map KNN</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Hazard</th>
+                                                    <th>1</th>
+                                                    <th>2</th>
+                                                    <th>UA</th>
+                                                    <th>PA</th>
+                                                    <th>OA</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>164</td>
+                                                    <td>43</td>
+                                                    <td>0.79</td>
+                                                    <td>0.73</td>
+                                                    <td>0.76</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>58</td>
+                                                    <td>182</td>
+                                                    <td>0.76</td>
+                                                    <td>0.81</td>
+                                                    <td>0.76</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
 
+                                </div>
+                                <div class="content">
+                                    <header>
+                                        <h4>Support Vector Machine (SVM)</h4>
+                                        <p>2nd alternative</p>
+                                    </header>
+                                    <p>SVM constructs a model that defines the boundaries between different susceptibility levels. It uses the training data to find the optimal hyperplane that separates the susceptibility levels with the maximum margin.
+                                    </p>
+                                    <div class="gallery gallery-train style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/suceptibilitysvm.jpg" class="image">
+                                                <img src="../images/gallery/methods/step2/suceptibilitysvm.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Susceptibility Map SVM</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/confidencesvm.jpg" class="image">
+                                                <img src="../images/gallery/methods/step2/confidencesvm.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Confidence Map SVM</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Hazard</th>
+                                                    <th>1</th>
+                                                    <th>2</th>
+                                                    <th>UA</th>
+                                                    <th>PA</th>
+                                                    <th>OA</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>158</td>
+                                                    <td>34</td>
+                                                    <td>0.82</td>
+                                                    <td>0.7</td>
+                                                    <td>0.77</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>64</td>
+                                                    <td>191</td>
+                                                    <td>0.75</td>
+                                                    <td>0.85</td>
+                                                    <td>0.77</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Despite the confidence maps obtained using SVM and KNN appearing lighter than the one obtained with Random Forest, which may suggest higher confidence in classification, the overall accuracy of each classification can be seen
+                                in the validation table. Random Forest maintains the highest proportion of correctly classified pixels. However, all three methods produce acceptable overall accuracy.</p>
                         </div>
                     </section>
 

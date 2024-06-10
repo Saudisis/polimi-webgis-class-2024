@@ -5615,7 +5615,7 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 }
 
 
-/* Gallery (transitions) */
+/*  (transitions) */
 
 .gallery.onload-fade-in article .image img {
     -moz-transition: opacity 0.75s ease-in-out;

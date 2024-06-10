@@ -17,6 +17,9 @@ footer img {
     width: 150px;
 }
 
+
+/* Methods*/
+
 .step1 {
     width: 60vw !important;
 }
@@ -28,6 +31,11 @@ footer img {
 .s1-nl ol {
     text-align: justify;
     padding-right: 20px;
+}
+
+.tools th,
+.tools td {
+    font-size: 0.9rem;
 }
 
 .stylenl {
@@ -42,6 +50,24 @@ footer img {
     padding-right: 40px;
 }
 
+.points-table div,
+.ptable {
+    width: 100%;
+}
+
+.points-table div:first-child {
+    margin-right: 15px;
+}
+
+.gallery-points {
+    width: 100%;
+}
+
+.points-table th,
+.points-table td {
+    font-size: 0.8rem;
+}
+
 .gallery.stylenl article {
     overflow: hidden;
     position: relative;
@@ -51,6 +77,19 @@ footer img {
 .gallery-train>.backward,
 .gallery-train>.forward {
     display: none;
+}
+
+.point-c div:first-child {
+    margin-right: 20px;
+    width: 47%;
+}
+
+.secondst {
+    width: 40vw;
+}
+
+.secondst .table-wrapper {
+    margin-top: 15px;
 }
 
 .banner-methods {
@@ -69,6 +108,11 @@ footer img {
 
 footer {
     height: 10%;
+}
+
+.train p,
+.train div:first-child {
+    margin-right: 10px;
 }
 
 
@@ -218,7 +262,7 @@ footer {
 
 .inner-results .box p,
 .inner-results .box li {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     margin: 0;
     text-align: justify;
 }
