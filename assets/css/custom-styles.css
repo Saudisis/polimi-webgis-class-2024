@@ -64,7 +64,9 @@ footer img {
 }
 
 .points-table th,
-.points-table td {
+.points-table td,
+.point-c td,
+.point-c th {
     font-size: 0.8rem;
 }
 
