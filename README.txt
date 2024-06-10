@@ -1,5 +1,5 @@
-# GIS 2024 - Politecnico di Milano
-Repository for the Web Development part of the GIS lessons 2023 - 2024.
+## GIS 2024 - Politecnico di Milano
+Repository for the Web Development part of the GIS Project 03 2024 .
 
 The contents of this repository are entirely for learning purposes. All contents and code is completely open and available and based on open-source software.
 
@@ -42,14 +42,8 @@ This will re-create the folder /docs with all the necessary files for hosting th
 Modify the configuration file (vite.config.js) for different build configurations and folder structures.
 This is a dummy project and is not intended to be a one-fits-all configuration.
 
-## Credits
-The website is based on the template:
-
-Twenty by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
-Adaptation to Vite and OpenLayers by Diuke
+## CreditsAdaptation 
+Vite and OpenLayers by Diuke
 https://github.com/Diuke
 
 
