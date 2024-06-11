@@ -244,7 +244,11 @@ footer {
 }
 
 .inner-results .box-left {
-    width: 50%;
+    width: 65vw;
+}
+
+.inner-results .box-right {
+    width: 35vw;
 }
 
 .inner-results .table-wrapper {
