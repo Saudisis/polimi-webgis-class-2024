@@ -1,12 +1,12 @@
-import 'ol/ol.css';
-import 'ol-layerswitcher/dist/ol-layerswitcher.css';
-import { Map, View, Overlay } from 'ol';
-import { Tile, Image, Group } from 'ol/layer';
-import { OSM, ImageWMS, BingMaps, StadiaMaps } from 'ol/source';
+import 'node_modules/ol/ol.css';
+import 'node_modules/ol-layerswitcher/dist/ol-layerswitcher.css';
+import { Map, View, Overlay } from 'node_modules/ol';
+import { Tile, Image, Group } from 'node_modules/ol/layer';
+import { OSM, ImageWMS, BingMaps, StadiaMaps } from 'node_modules/ol/source';
 import { fromLonLat } from 'ol/proj';
-import { ScaleLine, FullScreen, MousePosition } from 'ol/control';
-import LayerSwitcher from 'ol-layerswitcher';
-import { createStringXY } from 'ol/coordinate';
+import { ScaleLine, FullScreen, MousePosition } from 'node_modules/ol/control';
+import LayerSwitcher from 'node_modules/ol-layerswitcher';
+import { createStringXY } from 'node_modules/ol/coordinate';
 
 let osm = new Tile({
     title: "OSM basemap",
