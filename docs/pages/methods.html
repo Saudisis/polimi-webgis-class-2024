@@ -1,0 +1,993 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>GIS03 Methods</title>
+    <link rel="icon" type="image/x-icon" href="images\logo_icon.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+  <link rel="stylesheet" href="/polimi-webgis-class-2024/assets/main.3ee349d5.css">
+  <link rel="stylesheet" href="/polimi-webgis-class-2024/assets/custom-styles.ed94d316.css">
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <a href="../index.html"><img src="/polimi-webgis-class-2024/assets/logo_white.08ab5fbe.png" alt="logo-gis03"></img>
+            </a>
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="../index.html">Home</a></li>
+                    <li class="current"><a href="../pages/results.html">Results</a></li>
+                    <li class="current"><a href="../pages/webgis.html">WebGIS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="wrapper style1 align-center">
+            <div class="banner-methods">
+
+            </div>
+            <div class="inner">
+                <div>
+
+                </div>
+                <h1>Methodology</h1>
+                <p>
+                    The methodology integrates multiple data sources and analytical techniques to assess landslide susceptibility comprehensively.</p>
+                <div class="index align-left">
+
+                    <!-- Workflow -->
+                    <section>
+                        <header>
+                            <h3>Workflow</h3>
+                        </header>
+                        <div class="content">
+                            <p>Our approach includes a comprehensive <strong>four-step process</strong>: <a href="#first">data preprocessing for susceptibility mapping</a>, <a href="#second">susceptibility map generation</a>, <a href="#third">data preprocessing for exposure assessment</a>                                and <a href="#fourth">exposure assessment</a>. This systematic methodology ensures precise and reliable results in our geographic information system (GIS) project.</p>
+                        </div>
+                    </section>
+
+                    <!-- Tools -->
+                    <section>
+                        <header>
+                            <h3>Tools</h3>
+                        </header>
+                        <div class="tools">
+
+                            <div class="table-wrapper ">
+                                <header>
+                                    <h3>GIS Tools</h3>
+                                </header>
+                                <table class="alt">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Version</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>QGIS</td>
+                                            <td>Free and open-source Geographic Information System that supports viewing, editing, and analysis of geospatial data.</td>
+                                            <td>3.30</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://grass.osgeo.org/download/">GRASS</a></td>
+                                            <td>Free and open-source GIS software suite used for geospatial data management and analysis, image processing, and spatial modeling.</td>
+                                            <td>8.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://gdal.org/download.html">GDAL</a></td>
+                                            <td>A translator library for raster and vector geospatial data formats.</td>
+                                            <td>3.7</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://sourceforge.net/projects/saga-gis/">SAGA</a></td>
+                                            <td>Free and open-source GIS software used for geospatial analysis and data processing.</td>
+                                            <td>8.5.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://plugins.qgis.org/plugins/pointsamplingtool/">Point Sampling</a></td>
+                                            <td>QGIS plugin used to sample raster values at point locations.</td>
+                                            <td>0.5.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://github.com/nkarasiak/dzetsaka">Dzetsaka</a></td>
+                                            <td>QGIS plugin for supervised classification.</td>
+                                            <td>0.99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <hr/>
+                            <div class="table-wrapper ">
+                                <header>
+                                    <h3>WebGIS Tools</h3>
+                                </header>
+                                <table class="alt">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Version</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Git</td>
+                                            <td>Free and open-source distributed version control system</td>
+                                            <td>2.41.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Github</td>
+                                            <td>Web-based platform that uses Git for version control and is used for code hosting, collaboration, and project management.</td>
+                                            <td>N/A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Openlayers</td>
+                                            <td>High-performance, feature-packed library for creating interactive maps on the web.</td>
+                                            <td>6.15.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Geoserver</td>
+                                            <td>Open-source server for sharing geospatial data.</td>
+                                            <td>2.23.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FileZilla</td>
+                                            <td>Free and open-source FTP application that supports file transfer protocol (FTP), FTP over TLS (FTPS), and SFTP.</td>
+                                            <td>3.65.0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- Section 1 -->
+                    <section id="first">
+                        <header>
+                            <h3>Data preprocessing for susceptibility mapping</h3>
+                        </header>
+                        <div class="content step1">
+
+                            <header>
+                                <h3>Starting data and preliminary analysis</h3>
+                            </header>
+                            <p>We initiated our project by collecting pertinent datasets and performing initial analyses. Starting from these foundational layers, we meticulously clipped and reproject them to focus solely on the area of interest. Ensuring
+                                coherence between the Extent and Pixel size across all layers was a critical step in our process.</p>
+
+                            <!-- Gallery -->
+
+                            <div class="style1 align-center">
+                                <div class="gallery style2 medium lightbox">
+                                    <article>
+                                        <a href="../images/gallery/methods/step1/dtm.jpg" class="image">
+                                            <img src="/polimi-webgis-class-2024/assets/dtm.78c9e6df.jpg" alt="" />
+                                            <p class="modal-text">Represents the Earth's surface by capturing the elevation or height values of the terrain. It offers a detailed three-dimensional view of the topography, including features such as mountains, valleys, ridges,
+                                                and other surface formations</p>
+                                        </a>
+                                        <div class="caption">
+                                            <h3>DTM</h3>
+                                            <p>(Digital Terrain Model)</p>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/methods/step1/ndvi.jpg" class="image">
+                                            <img src="/polimi-webgis-class-2024/assets/ndvi.3c970a64.jpg" alt="" />
+                                            <p class="modal-text">The Normalized Difference Vegetation Index (NDVI) is a numerical measure used to evaluate vegetation health and vitality. NDVI is derived from the reflectance values of near-infrared (NIR) and red light bands.
+                                                This index calculates the difference between the reflectance of vegetation (which strongly reflects NIR) and non-vegetation surfaces (which reflect both NIR and red light). NDVI values range from -1 to +1,
+                                                with higher values representing denser and healthier vegetation cover.</p>
+                                        </a>
+                                        <div class="caption">
+                                            <h3>NDVI</h3>
+                                            <p>(Normalized Difference Vegetation Index)</p>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/methods/step1/dusaf.jpg" class="image">
+                                            <img src="/polimi-webgis-class-2024/assets/dusaf.ac3b38fe.jpg" alt="" />
+                                            <p class="modal-text">The Digital Urban Surface Analysis Factors (DUSAF) refer to variables derived from high-resolution remote sensing data used to evaluate the urban environment. These factors typically include land cover types,
+                                                impervious surface areas, building density, green spaces, road networks, and other urban characteristics. DUSAF forms the basis for analyzing urban patterns, quantifying the urban heat island effect, and
+                                                assessing urban sprawl.</p>
+                                        </a>
+                                        <div class="caption">
+                                            <h3>DUSAF</h3>
+                                            <p>(Destinazione d'Uso dei Suoli Agricoli e forestali)</p>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/methods/step1/rivers.jpg" class="image">
+                                            <img src="/polimi-webgis-class-2024/assets/rivers.d4642ffd.jpg" alt="" />
+                                            <p class="modal-text">Buffer layers around rivers are generated by extending the original river lines outward by a defined distance, creating a new polygon layer that encloses the rivers. This allows for spatial analysis to examine
+                                                the relationships between rivers and other features, such as landslides. By analyzing these buffer zones, we can identify areas within specific distances from rivers, assess potential impacts, and gain insights
+                                                into the interactions between water bodies and the landscape.</p>
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Rivers</h3>
+                                            <ul class="actions">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/methods/step1/roads.jpg" class="image">
+                                            <img src="/polimi-webgis-class-2024/assets/roads.7231f00a.jpg" alt="" />
+                                            <p class="modal-text">The buffer layer for roads is created by expanding the original road lines outward by a specified distance. This results in a new polygon layer that surrounds the roads, enabling spatial analysis to assess their
+                                                relationship with other features, such as landslide susceptibility. By identifying areas within certain distances of roads, we can evaluate potential impacts and better understand the influence of road networks
+                                                on the surrounding environment.</p>
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Roads</h3>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/methods/step1/faults.jpg" class="image">
+                                            <img src="/polimi-webgis-class-2024/assets/faults.f9a4c087.jpg" alt="" />
+                                            <p class="modal-text">The buffer layer for faults is produced by expanding the original fault lines outward by a predetermined distance, forming a new polygon layer that encircles the faults. This facilitates spatial analysis to
+                                                evaluate the relationships between faults and other geographical features, such as landslides. By examining these buffer zones, we can pinpoint areas within certain distances of faults, assess potential
+                                                risks, and enhance our understanding of the spatial dynamics and interactions involving fault lines.</p>
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Faults</h3>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/methods/step1/laszones.jpg" class="image">
+                                            <img src="/polimi-webgis-class-2024/assets/laszones.0a2ddf14.jpg" alt="" />
+                                            <p class="modal-text">The landslide inventory is a systematic collection and documentation of landslide information within a specific area. This process involves identifying, mapping, and cataloging landslides, noting their locations,
+                                                characteristics, and attributes.</p>
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Landslide Inventory</h3>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <header>
+                                <h3>Data Processing</h3>
+                            </header>
+                            <p>Terrain analysis and characterization were performed using the slope, aspect, and curvature tool, starting from the DTM layer. This was done with QGIS, specifically using the SAGA tool. Additionally, the population layer was
+                                added for subsequent analysis. </p>
+
+                            <div class="style1 align-center">
+                                <!-- Gallery -->
+                                <div class="gallery style2 medium lightbox">
+                                    <article>
+                                        <a href="../images/gallery/methods/step1/slope.png" class="image">
+                                            <img src="/polimi-webgis-class-2024/assets/slope.908c9364.png" alt="" />
+                                            <p class="modal-text">The slope tool evaluates the incline of the terrain across a raster surface, determining how steep it is at different points. It gauges the elevation shift between adjacent cells and presents this as either
+                                                a percentage or angle measurement.</p>
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Slope</h3>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/methods/step1/aspect.jpg" class="image">
+                                            <img src="/polimi-webgis-class-2024/assets/aspect.e337a4a0.jpg" alt="" />
+                                            <p class="modal-text">The aspect tool identifies the cardinal direction that a slope is oriented towards at every point on a raster surface. It reveals the terrain's orientation, indicating whether it faces north, south, east, or
+                                                west. Analyzing aspect is valuable for assessing how slopes are exposed to sunlight and wind patterns.</p>
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Aspect</h3>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/methods/step1/profile.jpg" class="image">
+                                            <img src="/polimi-webgis-class-2024/assets/profile.6d61edda.jpg" alt="" />
+                                            <p class="modal-text">Profile curvature reflects the curvature of the slope on its vertical profile. It distinguishes between concave and convex terrain features, which are critical factors in landslide formation. Concave terrain
+                                                tends to trap water, increasing erosion and instability, while convex terrain sheds water more efficiently, reducing these risks. </p>
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Curvature</h3>
+                                            <p>(Profile)</p>
+                                            <ul class="actions fixed">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/methods/step1/plan.jpg" class="image">
+                                            <img src="/polimi-webgis-class-2024/assets/plan.91cc0352.jpg" alt="" />
+                                            <p class="modal-text">Plan curvature reveals the curvature of the terrain on a horizontal plane, distinguishing between concave and convex features. This information is vital for assessing landslide risk, as concave terrain can accumulate
+                                                water, leading to erosion and instability, while convex terrain tends to shed water, reducing such risks.</p>
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Curvature</h3>
+                                            <p>(Plan)</p>
+                                            <ul class="actions">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <a href="../images/gallery/methods/step1/population.png" class="image">
+                                            <img src="/polimi-webgis-class-2024/assets/population.f48b68b5.png" alt="" />
+                                            <p class="modal-text">Spatial raster dataset with the estimated total number of people per grid-cell. The dataset is available to download in Geotiff. The projection is Geographic Coordinate System, WGS84. The units are number of
+                                                people per pixel. Available from the Year 2000 to 2020.</p>
+                                        </a>
+                                        <div class="caption">
+                                            <h3>Population</h3>
+                                            <ul class="actions">
+                                                <li><span class="button small">Details</span></li>
+                                            </ul>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <header>
+                                <h3>Processing No Landslides Zones</h3>
+                            </header>
+                            <p>Utilizing the Slope layer generated in the previous step, we designate areas with low landslide probability as No Landslide Zones (NLZ). Following the next steps:</p>
+                            <div class="content s1-nl">
+                                <div>
+                                    <ol>
+                                        <li>NLZ areas are defined as slopes with <code>angles smaller than 20° or greater than 70°</code>, employing the raster calculator.</li>
+                                        <li>To refine NLZ delineation and eliminate small pixel patches, the sieve tool is applied with a filter set at 150.</li>
+                                        <li>Although the NLZ layer is generated with some approximation, overlaps with the Landslide Inventory (LS) layer occur. To address this, the Difference tool is used to remove LS overlapping portions from the NLZ layer.</li>
+                                    </ol>
+                                </div>
+                                <div class="stylenl align-center">
+                                    <div class="gallery-nslz gallery style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/methods/step1/nlsz_slope.png" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/nlsz_slope.adc90ebe.png" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Step 1</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <a href="../images/gallery/methods/step1/nlsz_sieve.png" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/nlsz_sieve.1fc29b2b.png" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Step 2</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <a href="../images/gallery/methods/step1/difference.png" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/difference.e3394f5e.png" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>NLZ difference</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+
+                            <header>
+                                <h3>Train and testing points labels assignment</h3>
+                            </header>
+
+
+                            <p>A Hazard feature was created to differentiate No Landslide Zones from Landslide Zones: No Landslide Zones: 1 , Landslide Zones: 2</p>
+                            <div class="s1-nl train">
+                                <p>The training-testing ratio used to train the Machine Learning Model is 70/30. Therefore, 70% of LZ and NLZ polygons were randomly selected and assigned the "Training" label, while the remaining polygons were assigned the
+                                    "Testing" label. After this process, the hazard and training/testing labels were consolidated into one attribute table containing all polygons of LZ and NLZ. </p>
+                                <div class="stylenl train-test align-center">
+                                    <div class=" gallery-train gallery style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/methods/step1/tablehazard1.jpg" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/tablehazard1.025f296a.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Attribute table Hazard 1</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="stylenl train-test align-center">
+                                    <div class=" gallery-train gallery style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/methods/step1/tablehazard2.jpg" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/tablehazard2.5dddf730.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Attribute table Hazard 2</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <header>
+                                <h3>Random sampling points generation</h3>
+                            </header>
+                            <div class="content">
+                                <div class="s1-nl">
+                                    <div class="stylenl train-test align-center">
+                                        <div class=" gallery-train gallery style2  lightbox">
+                                            <article>
+                                                <a href="../images/gallery/methods/step1/train_test.png" class="image">
+                                                    <img src="/polimi-webgis-class-2024/assets/train_test.70ecfe27.png" alt="" />
+                                                </a>
+                                                <div class="caption">
+                                                    <h3>Training and Testing Points 1500</h3>
+                                                    <ul class="actions fixed">
+                                                        <li><span class="button small">Details</span></li>
+                                                    </ul>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <p class="leftp">To train the Machine Learning Algorithm for predicting the susceptibility percentage for landslides, random sampling points were generated within all the mentioned polygons. These points were randomly placed, using
+                                        the mean in the Landslide Zones polygons, given the uncertainty of the exact starting points of the landslides. <br/> Two different dataset sizes were generated to compare their overall accuracy after classification,
+                                        with the 1500 points dataset being the chosen one. </p>
+                                </div>
+                                <div class="s1-nl points-table">
+                                    <div>
+                                        <header>
+                                            <h4>1000 Points Dataset</h4>
+                                            <p>700 Points for training and 300 for Testing</p>
+                                        </header>
+                                        <div class="table-wrapper">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Train test</th>
+                                                        <th>Hazard</th>
+                                                        <th>Number of points</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Training</td>
+                                                        <td>1</td>
+                                                        <td>350</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Testing</td>
+                                                        <td>1</td>
+                                                        <td>150</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Training</td>
+                                                        <td>2</td>
+                                                        <td>350</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Testing</td>
+                                                        <td>2</td>
+                                                        <td>150</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <header>
+                                            <h4>1500 Points Dataset</h4>
+                                            <p>1050 Points for training and 450 for Testing</p>
+                                        </header>
+                                        <div class="table-wrapper">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Train test</th>
+                                                        <th>Hazard</th>
+                                                        <th>Number of points</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Training</td>
+                                                        <td>1</td>
+                                                        <td>525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Testing</td>
+                                                        <td>1</td>
+                                                        <td>225</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Training</td>
+                                                        <td>2</td>
+                                                        <td>525</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Testing</td>
+                                                        <td>2</td>
+                                                        <td>225</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <header>
+                                <h3>Sampling environmental factors</h3>
+                            </header>
+
+                            <div class="content">
+                                <p>Using the Point Sampling Tool, environmental layers were sampled to obtain new attributes for each point in the datasets. All null cells in these tables were replaced with 9999 to ensure the correct use of the Dzetsaka
+                                    Algorithm in the next step</p>
+                                <header>
+                                    <h4>Training Points Sampled </h4>
+                                    <p>Attribute table</p>
+                                </header>
+                                <img class="ptable" src="/polimi-webgis-class-2024/assets/training_table.339101db.jpg" />
+                                <header>
+                                    <h4>Testing Points Sampled </h4>
+                                    <p>Attribute table</p>
+                                </header>
+                                <img class="ptable" src="/polimi-webgis-class-2024/assets/testing_table.7efe1e0b.jpg" />
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 2 -->
+                    <section id="second">
+                        <header>
+                            <h3>Susceptibility map generation</h3>
+                        </header>
+                        <div class="content secondst">
+                            <header>
+                                <h3>Virtual multilayer generation</h3>
+                            </header>
+                            <div class="s1-nl">
+                                <div class="stylenl train-test align-center">
+                                    <div class=" gallery-train gallery style2  lightbox onscroll-fade-in">
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/multilayer.jpg" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/multilayer.1d933864.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Virtual Multilayer Raster</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <p class="leftp">All environmental factors were meticulously combined into a single raster layer using the Build Virtual Raster tool in QGIS. This process involved integrating various datasets such as terrain elevation, vegetation indices,
+                                    land use, roads, rivers, and fault lines to create a unified representation. This comprehensive raster layer was then prepared for input into the Dzetsaka classification tool, enabling a more sophisticated analysis
+                                    and accurate classification of landslide susceptibility in the Valdisotto region.</p>
+                            </div>
+                            <hr/>
+                            <header>
+                                <h3>Susceptibility map generation</h3>
+                            </header>
+                            <p>Random Forest was the first classifier selected for this analysis. Random Forest builds multiple decision trees using random subsets of the training data. Each tree votes on the susceptibility percentage for each point, and
+                                the final classification is based on the majority vote.The following Susceptibility Maps and Confidence Maps were obtained with the two different Data Sets:</p>
+                            <div class="s1-nl point-c">
+                                <div class="content">
+                                    <header>
+                                        <h4>Random Forest</h4>
+                                        <p>1500 Points DataSet</p>
+                                    </header>
+                                    <div class="gallery style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/suceptibility1500.jpg" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/suceptibility1500.ce49f881.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Susceptibility map 1500 points</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/confidence1500.jpg" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/confidence1500.2692f77c.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Confidence map 1500 points</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/rivers-confidence1500.jpg" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/rivers-confidence1500.c0e7fe75.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Rivers and confidence map</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Hazard</th>
+                                                    <th>1</th>
+                                                    <th>2</th>
+                                                    <th>UA</th>
+                                                    <th>PA</th>
+                                                    <th>OA</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>180</td>
+                                                    <td>27</td>
+                                                    <td>0.87</td>
+                                                    <td>0.8</td>
+                                                    <td>0.84</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>42</td>
+                                                    <td>198</td>
+                                                    <td>0.82</td>
+                                                    <td>0.88</td>
+                                                    <td>0.84</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <header>
+                                        <h4>Random Forest</h4>
+                                        <p>1000 Points DataSet</p>
+                                    </header>
+                                    <div class="gallery gallery-train style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/suceptibility1000.jpg" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/suceptibility1000.a6ad627e.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Susceptibility Map 1000 points</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/confidence1000.jpg" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/confidence1000.519e77ea.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Confidence Map 1000 points</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Hazard</th>
+                                                    <th>1</th>
+                                                    <th>2</th>
+                                                    <th>UA</th>
+                                                    <th>PA</th>
+                                                    <th>OA</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>116</td>
+                                                    <td>34</td>
+                                                    <td>0.77</td>
+                                                    <td>0.77</td>
+                                                    <td>0.76</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>26</td>
+                                                    <td>114</td>
+                                                    <td>0.81</td>
+                                                    <td>0.76</td>
+                                                    <td>0.76</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>After obtaining higher overall accuracy with the Random Forest classifier and the larger dataset, a comparison with two other classifiers was made using the same dataset of 1500 points. </p>
+                            <hr/>
+                            <header>
+                                <h3>Comparison with other classifiers</h3>
+                            </header>
+                            <p>Using this dataset, we tested two additional classification methods to evaluate their overall accuracy and determine the best susceptibility map</p>
+                            <div class="s1-nl point-c">
+                                <div class="content">
+                                    <header>
+                                        <h4>K-Nearest Neighbor (KNN)</h4>
+                                        <p>1st alternative</p>
+                                    </header>
+                                    <p>For each point in the raster, the KNN algorithm considers the susceptibility levels of the nearest points in the training dataset. It assigns the most common susceptibility level among these neighbors. </p>
+                                    <div class="gallery gallery-train style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/suceptibilityknn.jpg" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/suceptibilityknn.e5cded9f.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Susceptibility Map KNN</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/confidenceknn.jpg" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/confidenceknn.efc0c674.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Confidence Map KNN</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Hazard</th>
+                                                    <th>1</th>
+                                                    <th>2</th>
+                                                    <th>UA</th>
+                                                    <th>PA</th>
+                                                    <th>OA</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>164</td>
+                                                    <td>43</td>
+                                                    <td>0.79</td>
+                                                    <td>0.73</td>
+                                                    <td>0.76</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>58</td>
+                                                    <td>182</td>
+                                                    <td>0.76</td>
+                                                    <td>0.81</td>
+                                                    <td>0.76</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <div class="content">
+                                    <header>
+                                        <h4>Support Vector Machine (SVM)</h4>
+                                        <p>2nd alternative</p>
+                                    </header>
+                                    <p>SVM constructs a model that defines the boundaries between different susceptibility levels. It uses the training data to find the optimal hyperplane that separates the susceptibility levels with the maximum margin.
+                                    </p>
+                                    <div class="gallery gallery-train style2  lightbox">
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/suceptibilitysvm.jpg" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/suceptibilitysvm.77b971a2.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Susceptibility Map SVM</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <a href="../images/gallery/methods/step2/confidencesvm.jpg" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/confidencesvm.65d82d3b.jpg" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Confidence Map SVM</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="table-wrapper">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Hazard</th>
+                                                    <th>1</th>
+                                                    <th>2</th>
+                                                    <th>UA</th>
+                                                    <th>PA</th>
+                                                    <th>OA</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>158</td>
+                                                    <td>34</td>
+                                                    <td>0.82</td>
+                                                    <td>0.7</td>
+                                                    <td>0.77</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>64</td>
+                                                    <td>191</td>
+                                                    <td>0.75</td>
+                                                    <td>0.85</td>
+                                                    <td>0.77</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Despite the confidence maps obtained using SVM and KNN appearing lighter than the one obtained with Random Forest, which may suggest higher confidence in classification, the overall accuracy of each classification can be seen
+                                in the validation table. Random Forest maintains the highest proportion of correctly classified pixels. However, all three methods produce acceptable overall accuracy.</p>
+                        </div>
+                    </section>
+
+                    <!-- Section 3 -->
+                    <section id="third">
+                        <header>
+                            <h3>Data preprocessing for exposure assessment</h3>
+                        </header>
+                        <div class="content">
+                            <header>
+                                <h3>Processing population dataset</h3>
+                            </header>
+                            <div class="s1-nl">
+                                <p class="rightp">Population count data sourced from the <span><a href="https://hub.worldpop.org/geodata/summary?id=6310">WorldPop research programme</a></span> served as the foundational dataset for this analysis. Specifically, the retrieval
+                                    criteria targeted the total population count for Italy in the <strong>year 2020</strong>. Upon acquisition, the dataset was found to possess a spatial resolution of 100 meters, with each pixel on the matrix representing
+                                    a quantifiable number of individuals. Subsequently, the map underwent a series of geospatial transformations, including reprojection and clipping, tailored to the study area's specifications. </p>
+                                <div class="stylenl train-test align-center">
+                                    <div class=" gallery-train gallery style2  lightbox onscroll-fade-in">
+                                        <article>
+                                            <a href="../images/gallery/methods/step3/population_g3.png" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/population_g3.f54278c8.png" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Population</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Section 4 -->
+                    <section id="fourth">
+                        <header>
+                            <h3>Exposure assessment</h3>
+                        </header>
+                        <div class="content">
+                            <header>
+                                <h3>Calculate Susceptibility map</h3>
+                                <a href="https://hub.worldpop.org/geodata/summary?id=6310">
+                                </a>
+                            </header>
+
+                            <div class="s1-nl">
+                                <div class="stylenl train-test align-center">
+                                    <div class=" gallery-train gallery style2  lightbox onscroll-fade-in">
+                                        <article>
+                                            <a href="../images/gallery/methods/step4/sus.png" class="image">
+                                                <img src="/polimi-webgis-class-2024/assets/sus.98ca7013.png" alt="" />
+                                            </a>
+                                            <div class="caption">
+                                                <h3>Susceptibility reclassified</h3>
+                                                <ul class="actions fixed">
+                                                    <li><span class="button small">Details</span></li>
+                                                </ul>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <p class="leftp">Using the raster calculator tool, risk indexes were generated for the study area, considering the number of inhabitants. This approach identifies the most hazardous zones in Valdisotto and evaluates the exposure of real-world
+                                    elements to the landslide susceptibility map. Population data helped discern how many individuals reside in areas with different levels of landslide risk. The final step used a zonal statistics plugin to sum the population
+                                    in relation to the landslide susceptibility raster, showing the total number of people in each of the four previously determined susceptibility classes. </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+            <ul class="actions stacked">
+                <li><a href="../pages/results.html" class="button big wide smooth-scroll-middle">Explore the results</a></li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="wrapper style1 align-center">
+            <div class="inner">
+                <a href="https://www.geoinformatics.polimi.it/" class="image">
+                    <img src="/polimi-webgis-class-2024/assets/logo_polimi.16b72f46.png" alt="" />
+                </a>
+                <p>&copy; GIS Project - Group 03: <a href="">2024</a>.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
