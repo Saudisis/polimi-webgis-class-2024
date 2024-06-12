@@ -226,18 +226,19 @@
 
     // Lightbox.
     $('.gallery.lightbox')
-        .on('click', 'a', function(event) {
+        .on('click', 'img', function(event) {
 
             var $a = $(this),
                 $gallery = $a.parents('.gallery'),
+                $hyperlink = $a.parents('.image'),
                 $modal = $gallery.children('.modal'),
                 $modalImg = $modal.find('img'),
                 $modalCaption = $modal.find('.modal-caption'),
-                href = $a.attr('href'),
-                text = $a.find('.modal-text').text();
+                src = $a.attr('src'),
+                text = $hyperlink.find('p').text();
 
             // Not an image? Bail.
-            if (!href.match(/\.(jpg|gif|png|mp4)$/))
+            if (!src.match(/\.(jpg|gif|png|mp4)$/))
                 return;
 
             // Prevent default.
@@ -252,7 +253,7 @@
             $modal[0]._locked = true;
 
             // Set src.
-            $modalImg.attr('src', href);
+            $modalImg.attr('src', src);
 
             // Set text.
             $modalCaption.text(text);
