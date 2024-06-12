@@ -9,7 +9,7 @@ export default {
 
     // Change to the name of your repository
     // According to https://vitejs.dev/guide/static-deploy.html 
-    base: '/polimi-webgis-class-2024/', 
+    base: '/polimi-webgis-class-2024/',
 
     publicDir: "public",
 
@@ -24,7 +24,7 @@ export default {
         // Also adds every html file inside the /pages folder.
         // Further pages must be added to the configuration accordingly.
         rollupOptions: {
-            input: { 
+            input: {
                 main: 'index.html',
                 ...Object.fromEntries(
                     globSync('pages/*.html').map(file => [
@@ -36,10 +36,11 @@ export default {
                         ),
                         // This expands the relative paths to absolute paths, so e.g.
                         // src/nested/foo becomes /project/src/nested/foo.js
-                        fileURLToPath(new URL(file, import.meta.url))
+                        fileURLToPath(new URL(file,
+                            import.meta.url))
                     ])
                 ),
             },
         },
     }
-  }
+}
