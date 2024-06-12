@@ -95,7 +95,7 @@ footer img {
 }
 
 .banner-methods {
-    background-image: url(../../images/grupo_03.png);
+    background-image: url(/images/grupo_03.png);
     color: #ffffff;
     height: 15vh;
     display: flex;
